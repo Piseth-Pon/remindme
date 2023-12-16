@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Today</title>
+  <link rel="stylesheet" href="style.css">
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</head>
+<body>
+
+  <div class="app">
+    <div class="control">
+      <header>
+        <img src="./reminder-logo.png" alt="" srcset="">
+        <h1>REMIND ME</h1>
+      </header>
+
+      <section class="section-wrapper">
+        <h4>Plan your day with <span class="appname">REMIND ME</span></h4>
+
+        <form id="reminderForm">
+
+          <label>Title</label>
+          <input type="text" id="title" placeholder="Enter reminder title">
+
+          <label>Note</label>
+          <textarea id="note" cols="30" rows="5" placeholder="Enter reminder note"></textarea>
+
+          <label>Date</label>
+          <input type="date" id="date">
+
+          <label>Start Time</label>
+          <input type="time" id="startTime">
+
+          <label>End Time</label>
+          <input type="time" id="endTime">
+
+          <label>Priority</label>
+          <select id="priority">
+            <option value="">Select the priority</option>
+            <option value="A">A</option>
+            <option value="B">B</option>
+            <option value="C">C</option>
+            <option value="D">D</option>
+            <option value="E">E</option>
+            <option value="F">F</option>
+          </select>
+
+          <button class="btn" id="addBtn">ADD</button>
+
+        </form>
+      </section>
+    </div>
+
+    <section class="section-wrapper">
+      <h4>Your Reminders (<span id="amountOfReminders">0</span>)</h4>
+
+      <div class="reminders-wrapper">
+
+        <!-- <div class="reminder">
+          <div class="row">
+            <h4>Exam</h4>
+            <span class="priority">A</span>
+          </div>
+          <p>Review for final exam</p>
+          <p>Date: 25 June 2023</p>
+          <div class="row">
+            <p>Start Time: 07:00 AM</p>
+            <p>End Time: 10:00 AM</p>
+          </div>
+        </div> -->
+      </div>
+
+    </section>
+
+
+
+  </div>
+
+
+  <script src="script.js"></script>
+</body>
+</html>
